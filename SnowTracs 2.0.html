@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowTrack - GPS Tracker</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle">Light/Dark Mode</button>
+        <!-- Logos -->
+        <img src="Assets/images/logo-DARK.png" alt="SnowTrack Logo Dark" class="logo logo-dark">
+        <img src="Assets/images/logo-LIGHT.png" alt="SnowTrack Logo Light" class="logo logo-light">
+        <h1>SnowTrack - GPS Tracker</h1>
+    </header>
+    <main>
+        <h2>Welcome to SnowTrack</h2>
+        <p>Track your snowboarding or skiing adventures!</p>
+        <button id="trackButton">Start Tracking</button>
+        <div id="map">
+            <p>Map Placeholder</p>
+        </div>
+        <div id="stats">
+            <p id="coordinates">Coordinates: Waiting for GPS...</p>
+            <p id="speed">Current Speed: 0 km/h</p>
+            <p id="topSpeed">Top Speed: 0 km/h</p>
+            <p id="fastestTime">Fastest Time (Still to Moving): N/A</p>
+            <p id="totalDistance">Total Distance: 0.00 km</p>
+        </div>
+    </main>
+    <!-- Link to external JS -->
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

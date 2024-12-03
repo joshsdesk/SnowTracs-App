@@ -1,0 +1,140 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme Variables and Switching */
+
+    /* Default styling: Show dark logo */
+.logo-dark {
+    display: block; /* Visible by default */
+}
+
+.logo-light {
+    display: none; /* Hidden by default */
+}
+
+/* Dark mode: Switch logos */
+body.dark .logo-dark {
+    display: none; /* Hide the dark logo */
+}
+
+body.dark .logo-light {
+    display: block; /* Show the light logo */
+}
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #000;
+    --header-bg: #0077b6;
+    --button-bg: #023e8a;
+    --button-hover-bg: #0096c7;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --header-bg: #1f1f1f;
+    --button-bg: #333;
+    --button-hover-bg: #555;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    margin-top: 0; /* Remove gap above the header text */
+    padding: 0;
+    text-align: center;
+}
+header img.logo {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    width: 350px; /* Adjust size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    padding-bottom: 0; /* Remove unnecessary gap */
+}
+
+/* Default styling: Show dark logo */
+.logo-dark {
+    display: block;
+}
+
+.logo-light {
+    display: none; /* Hide light logo by default */
+}
+
+/* When in dark mode: Show light logo */
+body.dark .logo-dark {
+    display: none; /* Hide the dark logo */
+}
+
+body.dark .logo-light {
+    display: block; /* Show the light logo */
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Main Section */
+main {
+    padding: 32px;
+}
+
+/* Button */
+button {
+    padding: 16px 32px;
+    background-color: #023e8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0096c7;
+}
+
+/* Map Placeholder */
+#map {
+    margin: 32px auto;
+    width: 90%;
+    height: 300px;
+    background-color: #d3d3d3;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stats Section */
+#stats {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}

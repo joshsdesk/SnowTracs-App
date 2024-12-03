@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowTracs - GPS Tracker</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7ff28da03.js" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+</head>
+<body>
+    <header>
+        <button id="themeToggle" class="theme-toggle">Light/Dark Mode</button>
+        <img src="Assets/images/logo-DARK.png" alt="SnowTrack Logo Dark" class="logo logo-dark">
+        <img src="Assets/images/logo-LIGHT.png" alt="SnowTrack Logo Light" class="logo logo-light">
+        <h1>SnowTracs - GPS Tracker</h1>
+    </header>
+    <main>
+        <h2>Upload Your GPS Data</h2>
+        <input type="file" id="gpsUpload" accept=".csv,.gpx,.json">
+        <small id="fileInfo">Supported file types: .csv, .gpx, .json</small>
+        <button id="processFile">Process File</button>
+        <div id="map" style="width: 100%; height: 400px; margin-top: 20px;">
+            <!-- Map renders here -->
+        </div>
+        <div id="stats">
+            <p id="totalDistance">Total Distance: 0.00 miles</p>
+            <p id="topSpeed">Top Speed: 0 mph</p>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; JoshsWork. Made with <i class="fa-solid fa-jedi"></i> power!</p>
+        </div>
+    </footer>
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

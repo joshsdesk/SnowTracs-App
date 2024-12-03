@@ -1,0 +1,163 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme Variables and Switching */
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #000;
+    --header-bg: #356db6;
+    --button-bg: #356db6;
+    --button-hover-bg: #22addb;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --header-bg: #1f1f1f;
+    --button-bg: #333;
+    --button-hover-bg: #555;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+header img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+}
+
+/* Default styling: Show dark logo */
+.logo-dark {
+    display: block;
+}
+
+.logo-light {
+    display: none;
+}
+
+/* When in dark mode: Show light logo */
+body.dark .logo-dark {
+    display: none;
+}
+
+body.dark .logo-light {
+    display: block;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Main Section */
+main {
+    padding: 32px;
+}
+
+/* File Upload and Button Styling */
+input[type="file"] {
+    display: block;
+    margin: 16px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+button#processFile {
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#processFile:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Map Placeholder */
+#map {
+    margin: 32px auto;
+    width: 90%;
+    height: 400px;
+    background-color: #d3d3d3;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stats Section */
+#stats {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* File Info Message */
+#fileInfo {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.7;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 20px;
+}
+
+footer .copyright {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer .copyright i {
+    color: #ff6f61; /* Customize icon color */
+    margin-left: 4px;
+}
